@@ -1,0 +1,103 @@
+/* Dark theme styles */
+.accordion-button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: #555;
+    color: #fff;
+  }
+  .accordion-item {
+    background-color: #222;
+    border: 1px solid #444;
+  }
+  .accordion-body {
+    background-color: #333;
+    color: #fff;}
+
+    /* Make the arrow icon white */
+    .accordion-button::after {
+        color: white; /* White arrow */
+      }
+  
+      /* Optional: Change the hover state to a lighter button color */
+      .accordion-button:hover {
+        background-color: #f0f0f0;
+        color: #333;}
+
+        
+          .btn-cycle {
+            font-size: 20px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+          }
+          #map {  width: 100%;height: 100%; }
+
+        /* Increase font size for all table content */
+.table td {
+    font-size: 1.25rem;  /* Adjust this to your desired size */
+  }
+  
+  /* You can also increase the font size specifically for headings if you like */
+  .table th {
+    font-size: 1.5rem;  /* Adjust this for table headings */
+  }
+
+  .newh4{
+    color: #ffc107;
+    text-decoration: underline;
+  }
+  .newh4:hover{
+    color: #fff; /* Change to your desired hover color */
+    text-decoration: underline; /* Optional: Add underline on hover */
+  }
+         
+
+  #emailto:hover{
+    text-decoration: underline;
+  }
+
+    .ticker-wrapper {
+      overflow: hidden;
+      
+      
+      height: 50px;
+      white-space: nowrap;
+      position: relative;
+    }
+
+    .ticker {
+      display: flex;
+      width: max-content;
+      animation: scroll 10s linear infinite;
+      white-space: nowrap;
+    }
+
+    .ticker-item {
+      display: inline-flex;
+      padding: 0 2rem;
+      font-weight: bold;
+      line-height: 50px;
+      white-space: nowrap;
+      margin: 0;
+      flex: 0 0 auto;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .foot-links{
+      text-decoration: none; 
+      color: #fff;    }
+
+      .foot-links:hover{
+        text-decoration: underline;
+        
+      }
