@@ -327,6 +327,16 @@
       </div>
     </section>
 
+    <section class="py-5 text-bg-dark">
+        <div class="container">
+          <h2 class="text-center fw-bold mb-4">
+            About Us
+          </h2>
+          <div class="ratio ratio-16x9 d-flex align-items-center justify-content-center"><video id="mux-video" controls></video></div>
+          
+        </div>
+      </section>
+
     <section class="p5 mb-5 text-bg-dark">
       <div class="container">
         <h2 class="text-center mb-4 fw-bold">Address</h2>
@@ -721,6 +731,21 @@ globeMap.doubleClickZoom.disable();
 
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+  const video = document.getElementById('mux-video');
+  const playbackId = 'EE7tvRwjcKFnn4pnM01euBVD007H5LH9xNTXUXqyu4ZxI';
+  const src = `https://stream.mux.com/${playbackId}.m3u8`;
+
+  if (Hls.isSupported()) {
+    const hls = new Hls();
+    hls.loadSource(src);
+    hls.attachMedia(video);
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = src;
+  }
+</script>
 
 
   
